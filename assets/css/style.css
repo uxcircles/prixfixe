@@ -239,6 +239,7 @@ p { margin: 0 0 1em; }
 .award-line { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
 .award-line::before { content: ""; width: 28px; height: 1px; background: var(--brass); }
 .page-head .award-line { margin: 26px 0 0; }
+.section-head .award-line { margin: 0 0 22px; color: var(--brass); max-width: none; }
 .creds { list-style: none; padding: 0; margin: 34px 0 0; display: flex; flex-wrap: wrap; gap: 14px 28px; }
 .creds li { display: flex; flex-direction: column; gap: 4px; padding-left: 16px; border-left: 1px solid var(--brass); }
 .creds strong { font: italic 500 22px/1.1 var(--serif); color: var(--cream); }
