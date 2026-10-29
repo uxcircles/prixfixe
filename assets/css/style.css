@@ -60,6 +60,27 @@ p { margin: 0 0 1em; }
 .btn--ghost { background: transparent; color: var(--cream); border-color: var(--line); }
 .btn--ghost:hover { border-color: var(--cream); box-shadow: none; }
 
+/* ---------- Concept / credit strip ---------- */
+.concept-bar {
+  height: 34px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 0 var(--gutter); background: #000; color: var(--muted); font-size: 12.5px;
+  border-bottom: 1px solid var(--line);
+}
+.concept-bar p { display: flex; align-items: center; gap: 10px; margin: 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.concept-tag {
+  flex-shrink: 0; font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--cream); background: rgba(244, 233, 216, .12); border: 1px solid rgba(244, 233, 216, .24);
+  padding: 3px 7px 2px; border-radius: 4px;
+}
+.concept-short { display: none; }
+.concept-bar a { flex-shrink: 0; display: inline-flex; align-items: center; gap: 4px; color: var(--cream); text-decoration: none; letter-spacing: .02em; }
+.concept-bar a strong { font-weight: 600; letter-spacing: .06em; }
+.concept-bar a svg { width: .9em; height: .9em; }
+.concept-bar a:hover { color: #fff; }
+.concept-long a { display: inline; color: inherit; letter-spacing: 0; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 760px) { .concept-long { display: none; } .concept-short { display: inline; } }
+@media (max-width: 400px) { .concept-short { display: none; } }
+
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
@@ -87,7 +108,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 860px) {
   .nav-toggle { display: block; }
   .nav {
-    position: fixed; top: 76px; left: 0; right: 0; height: calc(100vh - 76px); height: calc(100dvh - 76px); overflow-y: auto; flex-direction: column; justify-content: center; gap: 28px; padding: 24px 16px;
+    position: fixed; top: var(--nav-top, 76px); left: 0; right: 0; height: calc(100vh - var(--nav-top, 76px)); height: calc(100dvh - var(--nav-top, 76px)); overflow-y: auto; flex-direction: column; justify-content: center; gap: 28px; padding: 24px 16px;
     background: var(--ink); opacity: 0; visibility: hidden; transition: opacity .25s, visibility .25s;
   }
   .nav a { font: 500 30px/1 var(--serif); }

@@ -7,6 +7,9 @@
   const toggle = document.querySelector(".nav-toggle");
   if (toggle) {
     toggle.addEventListener("click", () => {
+      // The concept strip can push the header down, so start the overlay at its real bottom edge
+      const header = document.querySelector(".site-header");
+      body.style.setProperty("--nav-top", header.getBoundingClientRect().bottom + "px");
       const open = body.classList.toggle("nav-open");
       toggle.setAttribute("aria-expanded", open);
     });
