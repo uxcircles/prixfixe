@@ -68,6 +68,14 @@
     });
   }
 
+  // Reviews strip arrows
+  const strip = document.querySelector(".reviews");
+  if (strip) {
+    const step = () => strip.querySelector(".review").offsetWidth + 20;
+    document.querySelector(".rv-prev")?.addEventListener("click", () => strip.scrollBy({ left: -step(), behavior: "smooth" }));
+    document.querySelector(".rv-next")?.addEventListener("click", () => strip.scrollBy({ left: step(), behavior: "smooth" }));
+  }
+
   const year = document.querySelector("#year");
   if (year) year.textContent = new Date().getFullYear();
 })();
