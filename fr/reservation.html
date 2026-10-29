@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réserver · Prix Fixe Brasserie, Soho</title>
+  <meta name="description" content="Réservez une table chez Prix Fixe Brasserie, Dean Street, Soho. Réservation en ligne jusqu&#x27;à 10 personnes.">
+  <meta name="theme-color" content="#170b0a">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/logo/prix-fixe-stacked-red.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/logo/prix-fixe-stacked-red-on-white.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=DM+Sans:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v=202610292240">
+  <link rel="alternate" hreflang="en" href="../reservation.html">
+  <link rel="alternate" hreflang="fr" href="../fr/reservation.html">
+  <link rel="alternate" hreflang="zh-Hant" href="../zh/reservation.html">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <div class="concept-bar" role="note">
+    <p><span class="concept-tag">Concept</span><span class="concept-long">Refonte conceptuelle. Ce n'est pas le <a href="https://www.prixfixe.net/" target="_blank" rel="noopener">site officiel de Prix Fixe</a>.</span><span class="concept-short">Refonte conceptuelle</span></p>
+    <a href="https://ux-circles.com/web" target="_blank" rel="noopener">Conçu par <strong>UX CIRCLES</strong> <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+  </div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Prix Fixe Brasserie, accueil">
+        <img src="../assets/logo/prix-fixe-horizontal-neon.svg" alt="" width="108" height="54">
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menus</a>
+        <a href="about.html">La Brasserie</a>
+        <a href="contact.html">Nous trouver</a>
+        <a class="btn" href="reservation.html">Réserver</a>
+        <span class="lang-switch"><a href="../reservation.html" hreflang="en" lang="en" aria-label="English">EN</a><a href="../fr/reservation.html" hreflang="fr" lang="fr" aria-label="Français" aria-current="true">FR</a><a href="../zh/reservation.html" hreflang="zh-Hant" lang="zh-Hant" aria-label="中文">中文</a></span>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">Réservations</p>
+        <h1>Réserver<span class="script">merci</span></h1>
+        <p>Réservation en ligne jusqu'à 10 personnes, confirmée immédiatement. Plus nombreux ? Envoyez une <a href="contact.html#enquiry">demande de groupe</a> ou appelez le 020 7734 5976.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split" style="align-items:start">
+        <div class="card">
+          <form class="form" id="booking-form" novalidate>
+            <div class="field full">
+              <label>Personnes</label>
+              <div class="party"><input type="radio" name="guests" id="p1" value="1"><label for="p1">1</label><input type="radio" name="guests" id="p2" value="2" checked><label for="p2">2</label><input type="radio" name="guests" id="p3" value="3"><label for="p3">3</label><input type="radio" name="guests" id="p4" value="4"><label for="p4">4</label><input type="radio" name="guests" id="p5" value="5"><label for="p5">5</label><input type="radio" name="guests" id="p6" value="6"><label for="p6">6</label><input type="radio" name="guests" id="p7" value="7"><label for="p7">7</label><input type="radio" name="guests" id="p8" value="8"><label for="p8">8</label><input type="radio" name="guests" id="p9" value="9"><label for="p9">9</label><input type="radio" name="guests" id="p10" value="10"><label for="p10">10</label></div>
+            </div>
+            <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+            <div class="field"><label for="time">Heure</label><select id="time" name="time"><option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option><option selected>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option></select></div>
+            <div class="field"><label for="name">Nom</label><input id="name" name="name" required autocomplete="name"></div>
+            <div class="field"><label for="phone">Téléphone</label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div>
+            <div class="field full"><label for="email">E-mail</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+            <div class="field full"><label for="notes">Demandes particulières</label><textarea id="notes" name="notes" placeholder="Horaire avant-théâtre, anniversaire, régime alimentaire…"></textarea></div>
+            <div class="full" style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+              <button class="btn" type="submit">Confirmer la réservation</button>
+              <p class="hint">Concept uniquement. Aucune réservation n'est effectuée.</p>
+            </div>
+          </form>
+          <div class="confirm" role="status"><h3>À ce soir !</h3><p id="confirm-text"></p></div>
+        </div>
+        <div>
+          <div class="split-media split-media--single" style="margin-bottom:28px">
+            <img src="../assets/img/terrace.jpg" alt="Le store rouge et la terrasse sur Dean Street" width="600" height="400">
+          </div>
+          <ul class="info-list">
+            <li><span class="k">Avant-théâtre</span><span>Demandez une table tôt et indiquez-nous l'heure du lever de rideau. Nous veillerons à ce que vous partiez à temps.</span></li>
+            <li><span class="k">Horaires</span><span>Dim – mer 12h – 23h · jeu – sam 12h – 23h30</span></li>
+            <li><span class="k">Menu déjeuner</span><span>Deux plats 19,90 £, 12h – 16h</span></li>
+            <li><span class="k">Service</span><span>Un service facultatif de 12,5 % est ajouté à l'addition.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="../assets/logo/prix-fixe-stacked-neon.svg" alt="Prix Fixe Brasserie" width="130" height="132">
+          <p>Une brasserie française au cœur de Soho. Steak frites, fruits de mer frais et menus à deux plats, à deux pas des théâtres.</p>
+        </div>
+        <div>
+          <h4>Adresse</h4>
+          <p>39 Dean Street<br>Soho, Londres W1D 4PU</p>
+          <p><a href="tel:+442077345976">020 7734 5976</a></p>
+          <p>Dim – mer 12h – 23h<br>Jeu – sam 12h – 23h30</p>
+        </div>
+        <div>
+          <h4>Découvrir</h4>
+          <ul>
+            <li><a href="menu.html">Menus et vins</a></li>
+            <li><a href="about.html#groups">Groupes et privatisation</a></li>
+            <li><a href="menu.html#set">Avant-théâtre</a></li>
+            <li><a href="reservation.html">Réserver</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Suivre</h4>
+          <ul>
+            <li><a href="https://twitter.com/prixfixelondon" rel="noopener">X / Twitter</a></li>
+            <li><a href="https://www.facebook.com/pages/Prix-Fixe-Brasserie/104739946242835" rel="noopener">Facebook</a></li>
+            <li><a href="http://www.pierrevictoire.com/" rel="noopener">Bistro jumeau : Pierre Victoire</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© <span id="year">2026</span> Prix Fixe Brasserie</span>
+        <span>Concept de refonte non officiel par <a href="https://ux-circles.com/web" target="_blank" rel="noopener">UX CIRCLES</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=202610292240"></script>
+</body>
+</html>

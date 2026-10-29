@@ -101,6 +101,11 @@ p { margin: 0 0 1em; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--cream); }
 .nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--neon); text-underline-offset: 8px; }
 .nav .btn { min-height: 42px; padding: 0 20px; color: #fff; }
+.lang-switch { display: flex; align-items: center; gap: 2px; margin-left: -6px; }
+.nav .lang-switch a { font: 600 12px/1 var(--sans); letter-spacing: .08em; color: var(--muted); padding: 8px 6px; text-decoration: none; }
+.nav .lang-switch a:hover { color: var(--cream); }
+.nav .lang-switch a[aria-current] { color: var(--cream); text-decoration: none; }
+.lang-switch a + a::before { content: "/"; color: var(--line); margin-right: 8px; }
 .nav-toggle { display: none; background: none; border: 0; color: var(--cream); width: 44px; height: 44px; cursor: pointer; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: currentColor; margin: 5px auto; transition: transform .25s, opacity .25s; }
 
@@ -112,6 +117,8 @@ p { margin: 0 0 1em; }
   }
   .nav a { font: 500 30px/1 var(--serif); }
   .nav .btn { font: 600 13px/1 var(--sans); min-height: 52px; padding: 0 32px; }
+  .lang-switch { margin: 8px 0 0; }
+  .nav .lang-switch a { font: 600 14px/1 var(--sans); padding: 10px 8px; }
   .nav-open .nav { opacity: 1; visibility: visible; }
   .nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
@@ -359,3 +366,16 @@ p { margin: 0 0 1em; }
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.is-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+/* ---------- Traditional Chinese ---------- */
+:lang(zh-Hant) {
+  --serif: "Bodoni Moda", "Noto Serif TC", "Songti TC", serif;
+  --sans: "DM Sans", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+}
+:lang(zh-Hant) em, :lang(zh-Hant) blockquote, :lang(zh-Hant) .creds strong, :lang(zh-Hant) .traits dd, :lang(zh-Hant) .ticker span { font-style: normal !important; }
+:lang(zh-Hant) .hero h1 { font-size: clamp(40px, 5.4vw, 76px); }
+:lang(zh-Hant) .hero h1 em { color: var(--brass); }
+:lang(zh-Hant) .page-head h1 { font-size: clamp(40px, 6vw, 84px); }
+:lang(zh-Hant) .section-head h2, :lang(zh-Hant) .split h2, :lang(zh-Hant) .cta h2, :lang(zh-Hant) .menu-block > header h2 { font-size: clamp(30px, 3.8vw, 50px); }
+:lang(zh-Hant) h1, :lang(zh-Hant) h2, :lang(zh-Hant) h3 { letter-spacing: .02em; line-height: 1.2; }
+:lang(zh-Hant) body { line-height: 1.75; }

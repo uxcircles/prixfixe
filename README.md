@@ -34,6 +34,16 @@ assets/img/            photos and logo
 - Tripadvisor reviews and the Travellers' Choice 2026 award are from Tripadvisor screenshots supplied by the client. Ratings (OpenTable 4.8, Tripadvisor 4.4), opening hours and review quotes were collected in October 2026 from search listings, [Harden's](https://www.hardens.com/az/restaurants/london/w1/prix-fixe.htm) and [Yelp](https://www.yelp.co.uk/biz/prix-fixe-london-2). Tripadvisor and OpenTable block automated reading, so their figures come from search results. Check them before going live.
 - Photos and logo belong to Prix Fixe Brasserie (from prixfixe.net). Map © OpenStreetMap contributors.
 
+## Languages
+
+English pages in the root are the source. French (`fr/`) and Traditional Chinese (`zh/`) pages are generated from them:
+
+```bash
+python3 i18n/build.py
+```
+
+Run it after any change to an English page. Translations live in `i18n/translations.py`, keyed by the English text; the script lists any text it left untranslated (wine names, places and brands are kept on purpose). Don't edit `fr/` or `zh/` by hand. The script also adds the EN / FR / 中文 switcher and hreflang links to every page.
+
 ## Pitch
 
 `pitch/` holds before/after comparisons of prixfixe.net (as it rendered on 29 October 2026) and the redesign, desktop and phone.

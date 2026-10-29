@@ -61,12 +61,15 @@
       e.preventDefault();
       if (!form.reportValidity()) return;
       const data = new FormData(form);
-      const when = new Date(data.get("date") + "T00:00").toLocaleDateString("en-GB", {
-        weekday: "long", day: "numeric", month: "long",
-      });
-      document.querySelector("#confirm-text").textContent =
-        `A table for ${data.get("guests")} on ${when} at ${data.get("time")}. ` +
-        `We'll send confirmation to ${data.get("email")}.`;
+      const lang = document.documentElement.lang.slice(0, 2);
+      const when = new Date(data.get("date") + "T00:00").toLocaleDateString(
+        { fr: "fr-FR", zh: "zh-TW" }[lang] || "en-GB", { weekday: "long", day: "numeric", month: "long" }
+      );
+      const [g, t, mail] = [data.get("guests"), data.get("time"), data.get("email")];
+      document.querySelector("#confirm-text").textContent = {
+        fr: `Une table pour ${g} le ${when} à ${t}. Nous enverrons la confirmation à ${mail}.`,
+        zh: `已為您預留 ${g} 位，${when} ${t}。確認信將寄至 ${mail}。`,
+      }[lang] || `A table for ${g} on ${when} at ${t}. We'll send confirmation to ${mail}.`;
       form.closest(".card").classList.add("is-sent");
     });
   }
