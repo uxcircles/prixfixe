@@ -24,7 +24,7 @@ assets/img/            photos and logo
 ## Design
 
 - Direction: a Soho brasserie at night. Oxblood and cream, with the red neon of the shop sign as the accent colour.
-- Logo: redrawn as vector in `assets/logo/` (SVG + PNG, red and neon versions). Lettering built from Sacramento (SIL OFL) with thickened strokes, "BRASSERIE" in DM Sans, both converted to outlines.
+- Logo: vector trace of the original lettering (from the menu PDF artwork), restacked as Prix / fixe / BRASSERIE. Red and neon versions in `assets/logo/` as SVG and PNG.
 - Fonts: Bodoni Moda (headings), DM Sans (body), Yellowtail (neon script), all from Google Fonts under the SIL Open Font License.
 
 ## Notes
