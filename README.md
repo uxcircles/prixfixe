@@ -37,3 +37,5 @@ assets/img/            photos and logo
 ## Pitch
 
 `pitch/` holds before/after comparisons of prixfixe.net (as it rendered on 29 October 2026) and the redesign, desktop and phone.
+
+When you change `style.css` or `main.js`, bump the `?v=` number on their links in every page, so browsers and GitHub Pages fetch the new file instead of a cached one.
