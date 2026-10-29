@@ -30,5 +30,5 @@ assets/img/            photos and logo
 
 - This is a design concept, not the restaurant's official site. The booking and group enquiry forms have no backend.
 - Menu items and prices come from the PDF menus on prixfixe.net (set menu, à la carte, desserts, wine list). The wine list on the menu page is a selection.
-- The current site doesn't list full opening hours, so only set lunch and pre-theatre times are shown.
+- Ratings (OpenTable 4.8, Tripadvisor 4.4), opening hours and review quotes were collected in October 2026 from search listings, [Harden's](https://www.hardens.com/az/restaurants/london/w1/prix-fixe.htm) and [Yelp](https://www.yelp.co.uk/biz/prix-fixe-london-2). Tripadvisor and OpenTable block automated reading, so their figures come from search results. Check them before going live.
 - Photos and logo belong to Prix Fixe Brasserie (from prixfixe.net). Map © OpenStreetMap contributors.
