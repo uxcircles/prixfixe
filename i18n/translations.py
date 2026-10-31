@@ -30,6 +30,10 @@ T = {
 "Follow": ("Suivre", "追蹤我們"),
 "Sister bistro: Pierre Victoire": ("Bistro jumeau : Pierre Victoire", "姊妹店：Pierre Victoire"),
 "Unofficial redesign concept by": ("Concept de refonte non officiel par", "非官方概念改版設計："),
+"This is an unsolicited concept by UX CIRCLES, not the official Prix Fixe website. Want it taken down? Email":
+  ("Ceci est un concept non sollicité de UX CIRCLES, et non le site officiel de Prix Fixe. Vous souhaitez qu\u2019il soit retiré\u00a0? Écrivez à",
+   "此網站為 UX CIRCLES 主動提案的概念設計，並非 Prix Fixe 官方網站。如需撤下，請來信"),
+"and we'll remove it within 2 working days.": (":\u00a0nous le supprimerons sous 2\u00a0jours ouvrés.", "，我們會在 2 個工作天內移除。"),
 
 # --- Home ---
 "Prix Fixe Brasserie · French restaurant in Soho": ("Prix Fixe Brasserie · Restaurant français à Soho", "Prix Fixe Brasserie · 倫敦蘇活區法式餐廳"),

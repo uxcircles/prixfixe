@@ -41,7 +41,10 @@ class Rewriter(HTMLParser):
         if self.idx is None or not key:
             return s
         if key in T:
-            return s[: len(s) - len(s.lstrip())] + T[key][self.idx] + s[len(s.rstrip()):]
+            t = T[key][self.idx]
+            # no space before full-width punctuation, e.g. after a link: "…</a>，我們…"
+            lead = "" if t[:1] in "，。、：；！？）" else s[: len(s) - len(s.lstrip())]
+            return lead + t + s[len(s.rstrip()):]
         if re.search(r"[A-Za-z]{3}", key):
             self.missing.add(key)
         return s
