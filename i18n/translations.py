@@ -7,7 +7,7 @@ T = {
 "Concept redesign. Not the": ("Refonte conceptuelle. Ce n'est pas le", "概念改版設計，並非"),
 "official Prix Fixe website": ("site officiel de Prix Fixe", "Prix Fixe 官方網站"),
 "Concept redesign": ("Refonte conceptuelle", "概念改版設計"),
-"Designed by": ("Conçu par", "設計："),
+"Designed by": ("Designed by", "設計："),
 "Home": ("Accueil", "首頁"),
 "Menus": ("Menus", "菜單"),
 "The Brasserie": ("La Brasserie", "關於餐廳"),
@@ -29,7 +29,7 @@ T = {
 "Pre-theatre": ("Avant-théâtre", "看戲前套餐"),
 "Follow": ("Suivre", "追蹤我們"),
 "Sister bistro: Pierre Victoire": ("Bistro jumeau : Pierre Victoire", "姊妹店：Pierre Victoire"),
-"Unofficial redesign concept by": ("Concept de refonte non officiel par", "非官方概念改版設計："),
+"Unofficial redesign concept by": ("Unofficial redesign concept by", "非官方概念設計："),
 "This is an unsolicited concept by UX CIRCLES, not the official Prix Fixe website. Want it taken down? Email":
   ("Ceci est un concept non sollicité de UX CIRCLES, et non le site officiel de Prix Fixe. Vous souhaitez qu\u2019il soit retiré\u00a0? Écrivez à",
    "此網站為 UX CIRCLES 主動提案的概念設計，並非 Prix Fixe 官方網站。如需撤下，請來信"),
